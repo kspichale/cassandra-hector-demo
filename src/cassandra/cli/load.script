@@ -1,0 +1,7 @@
+CREATE KEYSPACE MyKeyspace WITH
+placement_strategy = 'SimpleStrategy'
+AND strategy_options = {replication_factor:1};
+
+USE MyKeyspace;
+
+CREATE COLUMN FAMILY user WITH comparator = UTF8Type and column_metadata=[{column_name: company, validation_class: UTF8Type, index_type: KEYS}];
