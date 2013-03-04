@@ -45,12 +45,11 @@ public class CassandraIT {
 	@Test
 	public void findAllUsers() {
 		final UserDao dao = new UserDao(new DaoHelper());
-		for (int i = 0; i < 10; i++) {
-			final User user = TestUtil.getRandomUser();
-			dao.save(user);
-		}
-		final List<User> findByCompany = dao.findAllUsers();
-		assertThat(findByCompany).hasSize(10);
+		final List<User> findByCompanyBefore = dao.findAllUsers();
+		final User user = TestUtil.getRandomUser();
+		dao.save(user);
+		final List<User> findByCompanyAfter = dao.findAllUsers();
+		assertThat(findByCompanyAfter).hasSize(findByCompanyBefore.size() + 1);
 	}
 
 }
