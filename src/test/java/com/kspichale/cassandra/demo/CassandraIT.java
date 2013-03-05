@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.kspichale.cassandra.demo;
 
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.example.DaoHelper;
-import com.example.User;
-import com.example.UserDao;
+import com.kspichale.cassandra.demo.DaoHelper;
+import com.kspichale.cassandra.demo.User;
+import com.kspichale.cassandra.demo.UserDao;
 
 public class CassandraIT {
 

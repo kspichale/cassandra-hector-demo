@@ -1,8 +1,8 @@
-package com.mycompany;
+package com.kspichale.cassandra.demo;
 
 import org.apache.commons.lang.RandomStringUtils;
 
-import com.example.User;
+import com.kspichale.cassandra.demo.User;
 
 public class TestUtil {
 

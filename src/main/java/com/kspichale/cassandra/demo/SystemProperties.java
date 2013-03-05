@@ -1,4 +1,4 @@
-package com.example;
+package com.kspichale.cassandra.demo;
 
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;

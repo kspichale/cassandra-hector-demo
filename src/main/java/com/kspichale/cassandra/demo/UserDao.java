@@ -1,4 +1,4 @@
-package com.example;
+package com.kspichale.cassandra.demo;
 
 import java.util.ArrayList;
 import java.util.List;
